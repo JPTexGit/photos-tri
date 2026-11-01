@@ -1,0 +1,23 @@
+name: PhotosTri
+options:
+  bundleIdPrefix: fr.jptex
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  PhotosTri:
+    type: application
+    platform: iOS
+    sources: [PhotosTri]
+    info:
+      path: PhotosTri/Info.plist
+      properties:
+        CFBundleDisplayName: Photos Tri
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSPhotoLibraryUsageDescription: "Photos Tri lit ta photothèque pour trouver les doublons, les gros fichiers et regrouper par lieu. Rien n'est envoyé en ligne."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fr.jptex.photostri
+        SWIFT_VERSION: "5.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
